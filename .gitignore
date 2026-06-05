@@ -1,0 +1,82 @@
+# ============================================================================
+# Python Byte-compiled / optimized / DLL files
+# ============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ============================================================================
+# Virtual Environments (DO NOT upload these heavy local dependency folders)
+# ============================================================================
+venv/
+.venv/
+env/
+.env/
+ENV/
+env.bak/
+venv.bak/
+
+# ============================================================================
+# Environment Variables & Secrets (Crucial for security)
+# ============================================================================
+.env
+.env.*
+!.env.example
+secrets.json
+*.pem
+
+# ============================================================================
+# Distribution / Packaging (Build artifacts)
+# ============================================================================
+bin/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ============================================================================
+# Unit Test / Coverage Reports
+# ============================================================================
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+.ruff_cache/
+
+# ============================================================================
+# Jupyter Notebooks Checkpoints
+# ============================================================================
+.ipynb_checkpoints
+
+# ============================================================================
+# IDEs and Code Editors (Optional but highly recommended)
+# ============================================================================
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+.DS_Store
+Thumbs.db
