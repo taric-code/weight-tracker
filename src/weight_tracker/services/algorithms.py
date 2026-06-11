@@ -22,7 +22,7 @@ def bmr_value_man(weight: float, hight: float, age: int) -> int:
     Returns:
         int: The aproximet BMR value
     """
-    man_bmr = 10*weight+6.25*hight-5*age+5 #Mifflin-St Jeor Equation
+    man_bmr = 10 * weight + 6.25 * hight - 5 * age + 5 #Mifflin-St Jeor Equation
     
     return man_bmr
 
@@ -40,10 +40,24 @@ def bmr_value_woman(weight: float, hight: float, age: int) -> int:
     Returns:
         int: The aproximet BMR value
     """
-    woman_bmr = 10*weight+6.25*hight-5*age-161 #Mifflin-St Jeor Equation
+    woman_bmr = 10 * weight + 6.25 * hight - 5 * age - 161 #Mifflin-St Jeor Equation
     
     return woman_bmr
 
 
 def exercise_burn(met: float, weight: float, time: int) -> int:
-    pass
+    """Calory burn from movement.
+
+    Find the calory a movemt burn in set time.
+
+    Args:
+        met (float): The natural burn rate of movement.
+        weight (float): The weight of human doing it.
+        time (int): The time duration in minute.
+
+    Returns:
+        int: Calory burn from movement.
+    """
+    burn = (met * 3.5 * weight * time) / 200 # Standerd formula
+
+    return burn
